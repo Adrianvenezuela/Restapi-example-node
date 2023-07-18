@@ -1,12 +1,12 @@
-const { Router, Router } = require("express");
-const Router = Router();
+const { Router } = require("express");
+const router = Router();
 
-Router.get("/test", (req, res) => {
+router.get("/test", (req, res) => {
   const data = {
     name: "Fazt",
     wedsite: "faztweb.com",
   };
-  res.json("data");
+  res.json(data);
 });
 
-module.export = Router;
+module.exports = router;
